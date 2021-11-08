@@ -1,0 +1,23 @@
+#Make Current Window Transparent
+"/home/argus/scripts/make_trans.sh 230"
+    m:0x48 + c:28
+    Alt+Mod4 + t 
+
+#Launch Program
+#"rofi -show run -theme ~/.config/rofi/arc-red-dark.rasi"
+"rofi -show run"
+    m:0x40 + c:65
+    Mod4 + space
+
+#Switch Window
+"rofi -show window"
+    m:0x41 + c:25
+    Shift+Mod4 + w 
+
+#Search files
+"~/scripts/rofi-search.sh"
+    m:0x48 + c:65
+    Alt+Mod4 + space
+
+#
+# End of xbindkeys configuration

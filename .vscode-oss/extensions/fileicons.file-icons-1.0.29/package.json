@@ -1,0 +1,83 @@
+{
+	"name": "file-icons",
+	"displayName": "file-icons",
+	"description": "File-specific icons in VSCode for improved visual grepping.",
+	"version": "1.0.29",
+	"publisher": "fileicons",
+	"license": "MIT",
+	"author": "Daniel Brooker <dan@nocturnalcode.com>",
+	"maintainers": [
+		{
+			"name": "John Gardner",
+			"email": "gardnerjohng@gmail.com",
+			"url": "https://github.com/Alhadis"
+		}
+	],
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/file-icons/vscode"
+	},
+	"bugs": {
+		"url": "https://github.com/file-icons/vscode/issues",
+		"email": "dan@nocturnalcode.com"
+	},
+	"preview": true,
+	"homepage": "https://github.com/file-icons/vscode",
+	"icon": "icon.png",
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "file-icons",
+				"label": "File Icons",
+				"path": "./icons/file-icons-icon-theme.json"
+			},
+			{
+				"id": "file-icons-colourless",
+				"label": "File Icons (Colourless)",
+				"path": "./icons/file-icons-colourless-icon-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"import": "make update",
+		"lint": "make lint"
+	},
+	"eslintConfig": {
+		"extends": "@alhadis",
+		"rules": {
+			"camelcase": 0
+		}
+	},
+	"eslintIgnore": [
+		"defs"
+	],
+	"devDependencies": {
+		"@alhadis/eslint-config": "^2.3.2",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.9.8",
+		"babel-eslint": "^10.1.0",
+		"cson": "^7.0.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-import": "^2.20.2",
+		"genex": "^1.1.0",
+		"mocha": "^7.1.1",
+		"typescript": "^3.8.3",
+		"vsce": "^1.74.0",
+		"vscode": "^1.1.36"
+	},
+	"__metadata": {
+		"id": "2f1885f1-cc49-4c62-ae76-ba178959e1ad",
+		"publisherId": "edfa115b-7fab-4528-b0d2-133d30c9faf9",
+		"publisherDisplayName": null,
+		"installedTimestamp": 1635384481806
+	}
+}
