@@ -42,6 +42,8 @@ Document editor:	libreoffice  (in tools > options > accessibility,
 enable "Automatically detect high contrast mode" and "use automatic
 font color for screen display", and uncheck "use system colors for
 page previews".
+
+Music players:   mocp, ncspot
 ```
 
 # Compositor Arguments
