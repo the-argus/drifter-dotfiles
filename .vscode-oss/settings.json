@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 18,
+    "editor.renderWhitespace": "trailing",
+    "window.titleBarStyle": "custom",
+    "breadcrumbs.enabled": false,
+    "workbench.iconTheme": "file-icons-colourless",
+    "omnisharp.useGlobalMono": "always",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Skyhook Mono",
+    "glassit.alpha": 230
+}

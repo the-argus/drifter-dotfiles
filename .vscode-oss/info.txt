@@ -1,0 +1,1 @@
+copy the JSON in drifter_theme.json and replace another vscode theme with that. I'm too lazy to make an actual vscode extension, sorry. Also, if you want my transparency, either add code to the .config/picom/picom.conf opacity-rule or install the "glassit-vscode" extension and use my settings.json.
