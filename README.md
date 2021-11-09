@@ -31,6 +31,7 @@ Code editor:		code
 Image viewer:		feh
 Media player:		mpv
 Calculator:		gnome-calculator
+Discord client:	powercord
 ```
 
 the following are unconfigured by these dotfiles but recommended:
@@ -41,8 +42,6 @@ Document editor:	libreoffice  (in tools > options > accessibility,
 enable "Automatically detect high contrast mode" and "use automatic
 font color for screen display", and uncheck "use system colors for
 page previews".
-
-Discord client:	powercord
 ```
 
 # Compositor Arguments
