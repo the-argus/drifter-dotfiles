@@ -1,0 +1,467 @@
+:root { 
+
+// -- Member popout --
+.userPopout-xaxa6l { 
+  box-shadow: 0 0 10px 0 #101320d2;
+
+  .headerTop-3vNv-a { 
+    padding: 54px 16px 16px 16px;
+
+    // who cares about that
+    .setIdentityLink-1t8Ahd { display: none;}
+  }
+
+  .body-3HBlXn {
+    padding: 0 !important;
+
+    // Custom status
+    .customStatus-oN4ZZY, .aboutMeSection-1Fw5Ia { padding: 0 16px 16px 16px; margin: 0;}
+
+    // No divider
+    .divider-ewBQKj { display: none;}
+
+    // -- Activities --
+    .bodyInnerWrapper-26fQXj {
+      padding: 16px 16px 0 16px;
+
+      .activity-2INFPu { 
+        padding: 16px; margin: 20px 0 16px 0; 
+        z-index: 1;
+    
+        .headerText-1HLrL7, .activityName-1IaRLn, 
+        .content-3JfFJh, .details-38sfDr, .name-29ETJS, 
+        .nameNormal-2lqVQK, .nameWrap-3Z4G_9 { color: white;}
+    
+        .button-38aScr {
+          border: none;
+          background-color: #ffffff21;
+          box-shadow: 0 4px 15px #00000021;
+          color: #fff;
+        }
+
+        // Waves are back :D
+        .headerTextNormal-2mGWX3::before {
+          content: ""; position: absolute;
+          height: 21px;
+          width: 268px; top: -21px; left: 0;
+          background: url("https://nyri4.github.io/Comfy/assets/wave.svg");
+          background-size: 268px 21px;
+          animation: animate2 4s linear infinite;
+          animation-delay: 0s;
+          opacity: 1;
+
+          @keyframes animate2 { 0% { background-position-x: 268px; } 100% { background-position-x: 0;}}
+        }
+    
+        // Playing
+        &::before {
+          content: ""; position: absolute;
+          width: 100%; height: 100%; z-index: -2;
+          left: 0; top: 0;
+          background: #7289DA;
+        }
+
+        &::after {
+          content: ""; position: absolute;
+          height: 21px;
+          width: 268px; top: -20px; left: 0;
+          background: url("https://nyri4.github.io/Comfy/assets/wave_playing.svg");
+          background-size: 268px 21px;
+          animation: animate 6s linear infinite;
+          animation-delay: 0s;
+          opacity: 1;
+        }
+    
+        // Spotify
+        .timeBarUserPopout-AWPFf2 {
+          &::before {
+            content: ""; position: absolute;
+            width: 100%; height: 100%; z-index: -1;
+            left: 0; top: 0;
+            background: #1db954;
+          }
+
+          &::after {
+            content: ""; position: absolute;
+            height: 22px;
+            width: 268px; top: -20px; left: 0; z-index: 1;
+            background: url("https://nyri4.github.io/Comfy/assets/wave_spotify.svg");
+            background-size: 268px 22px;
+            animation: animate 6s linear infinite;
+            animation-delay: 0s;
+            @keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 268px;}}
+          }
+        }
+
+        .spotifyIcon-2J9kSv { display: none;}
+
+        // Scuffed border-radius
+        & + h3 {
+          position: relative;
+
+          &::before { 
+            content: ""; position: absolute;
+            top: -36px; left: -3px; z-index: 1;
+            width: 20px; height: 20px;
+            border: solid var(--background-tertiary);
+            border-width: 0 0 3px 3px;
+            border-radius: 0 0 0 8px;
+          }
+
+          &::after { 
+            content: ""; position: absolute;
+            top: -36px; right: -3px; z-index: 1;
+            width: 20px; height: 20px;
+            border: solid var(--background-tertiary);
+            border-width: 0 3px 3px 0;
+            border-radius: 0 0 8px 0;
+          }
+        }
+      }
+
+      // Roles
+      .role-2irmRk {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border: solid;
+        border-width: 0 0 0 3px;
+        border-radius: 1px 3px 3px 1px;
+
+        .roleCircle-3xAZ1j {
+          width: var(--role-circle) !important;
+          height: var(--role-circle) !important;
+
+          &::before {
+            position: absolute;
+            content: "";
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: inherit;
+            opacity: 0.3;
+            z-index: -1;
+          }
+        }
+      }
+      
+      .note-1oo11U { 
+        margin: 0;
+
+        .textarea-2r0oV8{
+          transition: background-color 120ms;
+
+          &:focus { background-color: var(--background-secondary-alt);}
+        }
+      }
+    }
+  }
+
+  // Avatar
+  .wrapper-3t9DeA { border: none; background: transparent;}
+  .avatarHint-2A3RNb { display: none;}
+
+  // Footer
+  .footer-3UKYOU { 
+    padding-top: 16px; margin-top: 0;
+
+    .input-2_SIlA { 
+      background-color: transparent;
+      transition: background-color 120ms;
+
+      &:focus { background-color: var(--background-secondary-alt);}
+    }
+  }
+}
+
+// Roles selector
+.container-3XJ8ns {
+  z-index: 1003;
+  border: none;
+  padding: 0;
+  background-color: #191f2e;
+
+  .container-cMG81i { border-radius: 5px 5px 0 0;}
+
+  .list-1xE9GQ { 
+    margin: 0; padding: 0; 
+
+    .item-2J2GlB {
+      margin: 5px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border-radius: 0;
+
+      .popoutRoleDot-1XPcoA { 
+        width: 0; border: none; margin: 0;
+
+        &::before {
+          position: absolute;
+          border-radius: 5px;
+          content: "";
+          top: 0; left: 0;
+          width: 100%; height: 100%;
+          background: inherit;
+          opacity: 0.2;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+// -- User modal --
+.root-3QyAh1 { 
+  width: 700px;
+
+  .topSection-y3p-_D { 
+    display: flex; z-index: 1;
+    align-items: flex-end;
+    background-color: var(--background-secondary);
+    box-sizing: border-box;
+
+    // Banner
+    .banner-2QYc2d { 
+      position: absolute;
+      top: 0; left: 0; z-index: -1;
+      width: 100%; height: 100%;
+      opacity: 0.7;
+    }
+
+    @media (min-height: 720px) { .banner-2QYc2d { height: calc(100% - 240px);}}
+
+    // User info
+    & > header {
+      display: flex; flex-direction: column-reverse;
+      width: 200px;
+      background: var(--deprecated-card-bg);
+      padding: 15px; margin: 20px 0 0 20px;
+      border-radius: 5px 5px 0 0;
+
+      // Avatar
+      .avatar-AvHqJA {
+        position: absolute;
+        top: -215px; left: 50%;
+        margin-left: -65px; border: none;
+        background: none;
+        width: 130px !important;
+        height: 130px !important;
+      }
+
+      .header-4zuFdR {
+        .mask-1l8v16 .pointerEvents-2zdfdO { display: none;}
+        .mask-1l8v16 foreignObject {
+          mask: none;
+          border-radius: var(--avatar-radius);
+        }
+
+        .headerTop-547GTz { 
+          position: static;
+          padding: 0;
+          flex-direction: column;
+
+          .badgeList-1R1WgZ { 
+            justify-content: center;
+            padding-right: 0;
+
+            & > div { margin: 6px;}
+          }
+
+          .relationshipButtons-pUQVkf {
+            flex-direction: column;
+            margin-top: 15px;
+
+            .additionalActionsIcon-365LnQ { 
+              transform: rotate(90deg);
+              margin: 8px 0 0 0;
+            }
+          }
+        }
+      }
+
+      .nameTag-ECvD8P {
+        margin: 160px 0 10px 0;
+        display: flex; flex-direction: column;
+        gap: 5px;
+      }
+
+      .customStatusActivity-nmH3DF {
+        position: fixed; display: flex;
+        align-items: center; justify-content: center;
+        top: 20px; left: 280px; bottom: calc(100% - 240px);
+        width: calc(100% - 300px);
+        padding: 0;
+
+        .customStatusText-2opeSw { 
+          font-size: 22px;
+
+          .customStatus-1COQYu { 
+            display: flex; flex-direction: column;
+            align-items: center; gap: 15px;
+            color: white; text-align: center;
+
+            .customStatusEmoji-1xY2Yn { width: 40px; height: 40px;}
+            .customStatusSoloEmoji-1RMV7U { width: 80px; height: 80px;}
+          }
+        }
+      }
+    }
+  }
+
+  // Infos / Server / Friends
+  .tabBarContainer-37hZsr:not(.flex-1xMQg5) {
+    flex: 1; border-bottom: none;
+    padding-left: 0;
+
+    .tabBar-3nvOPa {
+      justify-content: center;
+
+      .tabBarItem-3dfX8P[aria-controls="user_info-tab"],
+      .tabBarItem-3dfX8P[aria-controls="mutual_guilds-tab"],
+      .tabBarItem-3dfX8P[aria-controls="mutual_friends-tab"],
+      .tabBarItem-3dfX8P[aria-controls="activity-tab"] {
+        text-indent: 100%;
+        overflow: hidden;
+        margin: 0 30px;
+        width: 30px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 30px; height: 30px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .tabBarItem-3dfX8P[aria-controls="user_info-tab"]::after { background-image: url("https://nyri4.github.io/Comfy/assets/user.png");}
+      .tabBarItem-3dfX8P[aria-controls="mutual_guilds-tab"]::after { background-image: url("https://nyri4.github.io/Comfy/assets/guild.png");}
+      .tabBarItem-3dfX8P[aria-controls="mutual_friends-tab"]::after { background-image: url("https://nyri4.github.io/Comfy/assets/friend.png");}
+      .tabBarItem-3dfX8P[aria-controls="activity-tab"]::after { background-image: url("https://nyri4.github.io/Comfy/assets/activity.png");}
+    }
+  }
+  .noTabBar-3ZjPNR { border-top: none;}
+
+  // Body
+  .body-r6_QPy { 
+    z-index: 1;
+    background-color: var(--background-secondary);
+  }
+
+  .pc-connections .connectedAccounts-QlRa4m:empty::before { background-color: transparent;}
+
+  // -- Activities --
+  .activityProfile-2bJRaP { 
+    padding: 16px; margin: 12px;
+    border-radius: 5px;
+    overflow: hidden; z-index: 1;
+
+    .headerText-1HLrL7, .activityName-1IaRLn, .content-3JfFJh, 
+    .details-38sfDr, .name-29ETJS, .nameNormal-2lqVQK, .nameWrap-3Z4G_9  { color: white;}
+
+    .button-38aScr {
+      border: none;
+      background-color: #ffffff21;
+      box-shadow: 0 4px 15px #00000021;
+      color: #fff;
+    }
+
+    // Playing
+    .contentImagesProfile-1Mz07W::after,
+    .contentGameImageProfile-WTVbI0::after {
+      content: ""; position: absolute;
+      width: 100%; height: 100%; z-index: -2;
+      left: 0; top: 0;
+      background: #FFFFFF;
+    }
+
+    // Spotify
+    .timeBarProfile-10b-fm::after {
+      content: ""; position: absolute;
+      width: 100%; height: 100%; z-index: -1;
+      left: 0; top: 0;
+      background: #1db954;
+    }
+    .spotifyIcon-2J9kSv { display: none !important;}
+  }
+
+  // Connections
+  .connectedAccount-2Jb-Z0 {
+    border: solid #151b27;
+    border-width: 1.2px 1.2px 3px 1.2px;
+    border-radius: 4px;
+    width: 300px;
+    transition: 100ms;
+
+    &:active {
+      border-width: 1.2px 1.2px 1.2px 1.2px;
+      transform: translateY(1px);
+    }
+
+    .connectedAccountIcon-3_EQqg { padding: 5px; border-radius: 4px;}
+    .connectedAccountName-E1KzaT { margin-left: 13px;}
+  }
+
+  // Mutuals
+  .listRow-1iDGel { margin: 0; padding: 8px 12px;}
+}
+
+.accountBtnInner-sj5jLs[aria-label="Battle.net"],
+.accountBtnInner-sj5jLs[aria-label="Battle.net"]:hover,
+[src="/assets/7b964801001dd47cc05a91d6dacf6075.png"] { background-color: #1da0f248;}
+
+.accountBtnInner-sj5jLs[aria-label="Twitch"],
+.accountBtnInner-sj5jLs[aria-label="Twitch"]:hover,
+[src="/assets/007e5cb8871cf0987283c6307ce7fed0.png"] { background-color: #601bd852;}
+
+.accountBtnInner-sj5jLs[aria-label="YouTube"],
+.accountBtnInner-sj5jLs[aria-label="YouTube"]:hover,
+[src="/assets/25ec573cf82ee36d12296628f6bec11b.png"] { background-color: #d9252b49;}
+
+.accountBtnInner-sj5jLs[aria-label="Twitter"],
+.accountBtnInner-sj5jLs[aria-label="Twitter"]:hover,
+[src="/assets/6919f2a578d91a5d033b639f0fb52b3d.png"] { background-color: #0098e446;}
+
+.accountBtnInner-sj5jLs[aria-label="Steam"],
+.accountBtnInner-sj5jLs[aria-label="Steam"]:hover,
+[src="/assets/a9c26c8bebe406ca1adc1967bc532224.png"] { background-color: #00000034;}
+
+.accountBtnInner-sj5jLs[aria-label="Reddit"],
+.accountBtnInner-sj5jLs[aria-label="Reddit"]:hover,
+[src="/assets/b46c06eb71dc56a41432512168e6759a.png"] { background-color: #fe44013d;}
+
+.accountBtnInner-sj5jLs[aria-label="Facebook"],
+.accountBtnInner-sj5jLs[aria-label="Facebook"]:hover,
+[src="/assets/3d189c41ce8155dfebf86ba2d1acfbbc.png"] { background-color: #2e328485;}
+
+.accountBtnInner-sj5jLs[aria-label="Spotify"],
+.accountBtnInner-sj5jLs[aria-label="Spotify"]:hover,
+[src="/assets/7906941c1205ba04b6921f2af4c6a170.png"] { background-color: #1ed75f34;}
+
+.accountBtnInner-sj5jLs[aria-label="Xbox Live"],
+.accountBtnInner-sj5jLs[aria-label="Xbox Live"]:hover,
+[src="/assets/746aba83c88f087e3eef23a47dd57923.png"] { background-color: #5dc21e42;}
+
+.accountBtnInner-sj5jLs[aria-label="League Of Legends"],
+.accountBtnInner-sj5jLs[aria-label="League Of Legends"]:hover,
+[src="/assets/a0e2182e843745c73f7f3c8325a05ea9.png"] { background-color: #cea14638;}
+
+.accountBtnInner-sj5jLs[aria-label="GitHub"],
+.accountBtnInner-sj5jLs[aria-label="GitHub"]:hover,
+[src="/assets/afb09840b496f2c49032075a33da7fab.png"] { background-color: #24292e62;}
+
+// USRBG for BetterDiscord only
+.userPopout-xaxa6l[style*="-user-"] .banner-2QYc2d,
+.root-3QyAh1[style*="-user-"] .banner-2QYc2d {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: var(--user-popout-position, center) center;
+    background-image: var(--user-background);
+}
+
+.userPopout-xaxa6l[style*="-user-"]  {
+  .banner-2QYc2d { height: 120px;}
+  .avatarWrapperNormal-26WQIb { top: 76px;}
+}
+
+}
