@@ -33,3 +33,12 @@ the following are unconfigured by these dotfiles but recommended:
 ``File managers:	nemo, ranger``
 ``Document editor:	libreoffice`` (in tools > options > accessibility, enable "Automatically detect high contrast mode" and "use automatic font color for screen display", and uncheck "use system colors for page previews".
 ``Discord client:	powercord``
+
+# Compositor Arguments
+
+- remove ``exec picom`` from .xinitrc for an all-black, true dark mode.
+- replace ``exec picom`` with ``picom --experimental-backends --backend glx`` in .xinitrc for dual kawase blur! makes windows no longer seamless, however.
+
+# Gallery
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/2wWZDmC"><a href="//imgur.com/a/2wWZDmC">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
