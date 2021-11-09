@@ -19,22 +19,28 @@ The GTK theme "Black-n-White" is made by user CRAZYT on gnome-look.org.  find th
 
 # Programs used
 
-``WM:			i3-gaps``
-``Compositor:		picom-git``
-``Terminal:		alacritty``
-``Browser:		qutebrowser``
-``Launcher:		rofi``
-``Visualizer:		cavalcade``
-``Graphics tk:		gtk-3.0``
-``Code editor:		code``
-``Image viewer:		feh``
-``Media player:		mpv``
-``Calculator:		gnome-calculator``
+```
+WM:			i3-gaps
+Compositor:		picom-git
+Terminal:		alacritty
+Browser:		qutebrowser
+Launcher:		rofi
+Visualizer:		cavalcade
+Graphics tk:		gtk-3.0
+Code editor:		code
+Image viewer:		feh
+Media player:		mpv
+Calculator:		gnome-calculator
+```
 
 the following are unconfigured by these dotfiles but recommended:
-``File managers:	nemo, ranger``
-``Document editor:	libreoffice`` (in tools > options > accessibility, enable "Automatically detect high contrast mode" and "use automatic font color for screen display", and uncheck "use system colors for page previews".
-``Discord client:	powercord``
+```
+File managers:	nemo, ranger``
+
+Document editor:	libreoffice  (in tools > options > accessibility, enable "Automatically detect high contrast mode" and "use automatic font color for screen display", and uncheck "use system colors for page previews".
+
+Discord client:	powercord
+```
 
 # Compositor Arguments
 
