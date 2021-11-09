@@ -20,7 +20,7 @@ The GTK theme "Black-n-White" is made by user CRAZYT on gnome-look.org.  find th
 # Programs used
 
 ```
-WM:			i3-gaps i3bar i3status
+WM:			i3-gaps i3status
 Compositor:		picom-git
 Terminal:		alacritty
 Browser:		qutebrowser
