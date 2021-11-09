@@ -28,6 +28,8 @@ The GTK theme "Black-n-White" is made by user CRAZYT on gnome-look.org.  find th
 ``Graphics tk:		gtk-3.0``
 ``Code editor:		code``
 ``Image viewer:		feh``
+``Media player:		mpv``
+``Calculator:		gnome-calculator``
 
 the following are unconfigured by these dotfiles but recommended:
 ``File managers:	nemo, ranger``
