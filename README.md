@@ -31,7 +31,7 @@ Code editor:		code
 Image viewer:		feh
 Media player:		mpv
 Calculator:		gnome-calculator
-Discord client:	  powercord
+Discord client:	    powercord
 ```
 
 the following are unconfigured by these dotfiles but recommended:
