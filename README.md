@@ -36,14 +36,14 @@ Discord client:	        powercord
 
 the following are unconfigured by these dotfiles but recommended:
 ```
-File managers:	nemo, ranger``
+File managers:	        nemo, ranger
 
 Document editor:	libreoffice  (in tools > options > accessibility,
 enable "Automatically detect high contrast mode" and "use automatic
 font color for screen display", and uncheck "use system colors for
 page previews".
 
-Music players:   mocp, ncspot
+Music players:          mocp, ncspot
 ```
 
 # Compositor Arguments
