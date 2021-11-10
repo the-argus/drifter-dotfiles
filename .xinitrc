@@ -50,8 +50,8 @@ fi
 
 xbindkeys
 alacritty &
-exec picom --no-fading-openclose -f &
-feh --bg-center ~/Desktop/ricing/Wallpaper/rainworld.png
+exec picom --experimental-backends --backend glx --no-fading-openclose -f &
+feh --bg-center ~/.wallpapers/rainworld.png
 # twm &
 # exec xterm -geometry 80x66+0+0 -name login
 exec i3
