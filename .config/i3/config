@@ -12,35 +12,37 @@
 #exec_always --no-startup-id autotiling
 #
 # #---Basic Definitions---# #
-smart_gaps on
+#smart_gaps on
 for_window [class="^.*"] border pixel 2
+for_window [class="Gnome-calculator"] floating enable, resize set 455px 822px
 smart_borders on
-set $inner_gaps 15
+set $inner_gaps 10
 set $outer_gaps 0
 #set $term --no-startup-id alacritty
 
 
 # Color settings
 
-set $bg-color 	         #3DFBACE6
-set $inactive-bg-color   #000000E6
+set $bg-color 	         #3DFBAC
+set $inactive-bg-color   #000000CC
 set $text-color          #000000
 set $inactive-text-color #3DFBAC
-set $urgent-bg-color     #FF296AE6
+set $urgent-bg-color     #FF296A
+set $inactive-border	 #00000000
 
 # BORDERS
 #			border			background		text			indicator
 client.focused		$bg-color		$bg-color		$text-color		#424242
-client.unfocused	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	#424242
-client.focused_inactive	$inactive-bg-color	$inactive-bg-color	$inactive-text-color	#424242
+client.unfocused	$inactive-border	$inactive-bg-color	$inactive-text-color	#424242
+client.focused_inactive	$inactive-border	$inactive-bg-color	$inactive-text-color	#424242
 client.urgent		$urgent-bg-color	$urgent-bg-color	$text-color		#424242
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # #---Gaps---# #
-#gaps inner $inner_gaps
-#gaps outer $outer_gaps
+gaps inner $inner_gaps
+gaps outer $outer_gaps
 
 set $mod Mod4
 
@@ -69,11 +71,10 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
+# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -133,7 +134,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -185,6 +186,28 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym XF86MonBrightnessDown "exec --no-startup-id $HOME/scripts/backlight/decrease.sh"
+
+bindsym XF86MonBrightnessUp "exec --no-startup-id $HOME/scripts/backlight/increase.sh"
+
+bindsym XF86Calculator "exec --no-startup-id gnome-calculator"
+
+bindsym XF86AudioRaiseVolume "exec --no-startup-id $HOME/scripts/sound/volume-up.sh"
+
+bindsym XF86AudioLowerVolume "exec --no-startup-id $HOME/scripts/sound/volume-down.sh"
+
+bindsym XF86AudioMute "exec --no-startup-id $HOME/scripts/sound/volume-mute.sh"
+
+bindsym Print "exec --no-startup-id $HOME/scripts/take_screenshot.sh"
+
+bindsym $mod+Mod1+t "exec --no-startup-id $HOME/scripts/make_trans.sh 204"
+
+bindsym $mod+space "exec --no-startup-id rofi -show run"
+
+bindsym $mod+Shift+w "exec --no-startup-id rofi -show window"
+
+bindsym $mod+Mod1+space "exec --no-startup-id $HOME/scripts/rofi-search.sh"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -218,16 +241,17 @@ bar {
 	i3bar_command i3bar -t
 	position top
         status_command i3status
+	tray_output none
 	tray_padding 0
 	bindsym button1 nop
 	workspace_min_width 40
 #	font pango: Skyhook Mono 10
 	font pango: ProggySquareTT 12
 	colors {
-		background #000000E6
-		urgent_workspace 	#FF296AE6 #FF296AE6 #FFFFFFE6
-		inactive_workspace 	#000000E6 #000000E6 #999999E6
-		active_workspace 	#000000E6 #000000E6 #999999E6
-		focused_workspace 	#3DFBACE6 #3DFBACE6 #000000E6
+		background #000000CC
+		urgent_workspace 	#FF296ACC #FF296ACC #FFFFFFCC
+		inactive_workspace 	#000000CC #000000CC #999999CC
+		active_workspace 	#000000CC #000000CC #999999CC
+		focused_workspace 	#3DFBAC   #3DFBAC   #000000CC
 	}
 }
