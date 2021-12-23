@@ -4,6 +4,7 @@ dotfiles for my first rice, originally inspired by hyper light drifter and rain 
 
 ![preview](screenshots/screenshot_2021-12-23_11:21:08.png)
 ![preview](screenshots/screenshot_2021-12-23_11:23:29.png)
+![preview](screenshots/screenshot_2021-12-23_11:44:39.png)
 ![preview](screenshots/screenshot_2021-12-23_11:25:17.png)
 ![preview](screenshots/screenshot_2021-12-23_11:26:20.png)
 
