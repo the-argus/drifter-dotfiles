@@ -51,7 +51,3 @@ PDF Viewer:		epdfview (enable invert colors)
 # Compositor Arguments
 
 - remove ``exec picom`` from .xinitrc for an all-black, true dark mode.
-
-# Gallery
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/2wWZDmC"><a href="//imgur.com/a/2wWZDmC">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
