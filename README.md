@@ -2,7 +2,11 @@
 
 dotfiles for my first rice, originally inspired by hyper light drifter and rain world. no longer really related to those games, but retains the teal-green color from HLD. made for arch linux.
 
-![preview](.wallpapers/preview.png)
+![preview](screenshots/screenshot_2021-12-23_11:21:08.png)
+![preview](screenshots/screenshot_2021-12-23_11:23:29.png)
+![preview](screenshots/screenshot_2021-12-23_11:25:17.png)
+![preview](screenshots/screenshot_2021-12-23_11:26:20.png)
+
 
 # DISCLAIMER
 
@@ -13,8 +17,8 @@ The GTK theme "Black-n-White" is made by user CRAZYT on gnome-look.org.  find th
 
 # Installation
 - clone this repo
-- copy everything except .bashrc and .xinitrc. look at those files and pick and choose things you'd like to add to your own keybind daemon and bashrc and xinitrc.
-- go into .vscode-oss and take a look at info.txt, if you want my vscode theme. it wont work out of the box.
+- copy everything except .xinitrc into your home directory. i mean i guess you can copy xinit but i assume you just want to pick and choose my startup programs
+- go into the vscode theme folder and take a look at info.txt if you want my vscode theme. it wont work out of the box.
 
 # Programs used
 
