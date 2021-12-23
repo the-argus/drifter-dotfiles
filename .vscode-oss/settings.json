@@ -6,6 +6,5 @@
     "workbench.iconTheme": "file-icons-colourless",
     "omnisharp.useGlobalMono": "always",
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "Skyhook Mono",
-    "glassit.alpha": 230
+    "editor.fontFamily": "Skyhook Mono"
 }
