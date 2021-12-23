@@ -3,7 +3,7 @@
 DATE=$(echo $(date +"%F_%T"))
 NAME=$(echo screenshot_$DATE)
 
-SCROTPATH="$HOME/Desktop/media/Images/screenshots"
+SCROTPATH="$HOME/screenshots"
 
 ffmpeg -f x11grab -video_size 1920x1080 -i $DISPLAY -vframes 1 $SCROTPATH/$NAME.png
 
