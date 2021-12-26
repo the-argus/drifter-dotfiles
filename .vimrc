@@ -1,0 +1,3 @@
+colorscheme drifter
+
+syntax on

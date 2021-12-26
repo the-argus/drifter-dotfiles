@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/argus/.vim/colors'
+let g:netrw_dirhist_4='/home/argus/Desktop/programming/Minecraft/Meme Pack Generator'
+let g:netrw_dirhist_3='/home/argus/.local/share/multimc/instances/compat testing/.minecraft/config/astralsorcery'
+let g:netrw_dirhist_2='/home/argus/.local/share/multimc/instances/compat testing/.minecraft/config'
+let g:netrw_dirhist_1='/home/argus/.yarn'
+let g:netrw_dirhist_0='/home/argus/.config/picom'
+let g:netrw_dirhist_9='/etc'
+let g:netrw_dirhist_8='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_7='/usr/share/X11/xorg.conf.d'
+let g:netrw_dirhist_6='/var/log/journal/remote'
